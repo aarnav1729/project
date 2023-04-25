@@ -1,0 +1,75 @@
+/* Styling for the checkout form */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+ /* Custom styles for checkout menu */
+    form {
+      margin: 20px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+      margin-right: 20px;
+    }
+    input {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin-left: 170px;
+    }
+
+/* Styling for the input fields */
+.checkout-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"],
+.checkout-form input[type="number"],
+.checkout-form select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Styling for the submit button */
+.checkout-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the error messages */
+.checkout-form .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Styling for the total price */
+.checkout-form .total-price {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}

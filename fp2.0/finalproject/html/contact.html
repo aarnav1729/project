@@ -1,0 +1,105 @@
+<!-- I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed. Shreyas Nagaprasad. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Celtic Chic Boutique Contact Form</title>
+	<link rel="stylesheet" href="../css/form.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="../images/Antique/logo.svg" alt="Celtic Chic Boutique"></a>
+			</div>
+			  <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="antiques.html">Antiques</a></li>
+	  <li><a href="mens.html">Mens</a></li>
+        <li><a href="womens.html">Womens</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+		</nav>
+	</header>
+
+<main>
+	<form action="http://www.blackgoosebistro.com/pizz.php" method="POST">
+		<fieldset>
+			<legend><em>Your Information</em></legend>
+			<div class="form-container">
+				<ul>
+					<li>
+						<label for="customername">Name:</label>
+						<input type="text" id="customername" name="customername" placeholder="Name" required>
+					</li>
+					<li>
+						<label for="customeraddress">Address:</label>
+						<input type="text" id="customeraddress" name="customeraddress" placeholder="Address" required>
+					</li>
+					<li>
+						<label for="customerphone">Telephone Number:</label>
+						<input type="tel" id="customerphone" name="customerphone" placeholder="(xxx) xxx-xxxx" required>
+					</li>
+					<li>
+						<label for="customeremail">Email:</label>
+						<input type="email" id="customeremail" name="customeremail" placeholder="Email" required>
+					</li>
+					<li>
+						<label for="instructions">Describe The Issue:</label>
+						<textarea id="instructions" name="instructions" rows="4" maxlength="400" placeholder="No more than 400 characters long"></textarea>
+					</li>
+				</ul>
+			</div>
+		</fieldset>
+
+		<fieldset>
+	<legend><em>Submit Information Here</em></legend>
+	<div class="form-container">
+		<form>
+			<ul>
+				<li>
+					<label for="find-us">How did you find us?</label>
+					<input type="radio" id="men" name="find-us" value="Online" checked>
+					<label for="men">Online</label>
+					<input type="radio" id="women" name="find-us" value="Person">
+					<label for="women">Person to Person</label>
+					<input type="radio" id="unisex" name="find-us" value="ads">
+					<label for="unisex">Mail Ads</label>
+				</li>
+				<li>
+					<label for="country">What country are you from?</label>
+					<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+						<option value="britain">Britain</option>
+						<option value="scotland">Scotland</option>
+						<option value="ireland">Ireland</option>
+					</select>
+				</li>
+			</ul>
+			<p>
+				<input type="submit" value="Submit" onclick="showAlert()">
+				<input type="reset">
+			</p>
+		</form>
+	</div>
+</fieldset>
+</body>
+<script>
+function showAlert() {
+  alert("Message Received. We will respond to you as soon as possible.");
+}
+</script>
+
+</html>
